@@ -7,6 +7,12 @@ public class Method_02 {
 	 */
 
 	public static void main(String[] args) {
+		
+		/*
+		 * 명령문 해석
+		 * 1. num()를 실행하여 => num()를 호출하여 실행하고
+		 * 2. num()가 return 하는 데이터를 intNum변수에 저장하라
+		 */
 
 		int intNum1 = num();
 		double doNum1 = doNum();
