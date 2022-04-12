@@ -1,6 +1,6 @@
 package com.callor.arrays.exec;
 
-public class ExecV4 {
+public class ExecV6 {
 
 	public static void main(String[] args) {
 
@@ -9,19 +9,23 @@ public class ExecV4 {
 			intNums[i] = (int) (Math.random() * 100) + 1;
 		}
 
-		// 짝수인 수를 덧셈할 변수를 선언
-		int intEvenSum = 0;
+		int count = 0;
 		for (int i = 0; i < intNums.length; i++) {
+
 			boolean bEven = false;
 			bEven = (intNums[i] % 2) == 0;
-
 			if (bEven) {
-				// intEvenSum = intEvenSum + intNums[i];
-				intEvenSum += intNums[i];
+				System.out.print(intNums[i] + ",\t");
+				count++;
+				boolean bLine = false;
+				bLine = (count % 5) == 0;
+				if (bLine) {
+					System.out.println();
+				}
 			}
+
 		}
 
-		System.out.println("짝수들의 합 : " + intEvenSum);
 	}
 
 }
