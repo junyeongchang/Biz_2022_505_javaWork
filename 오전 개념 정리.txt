@@ -71,3 +71,16 @@ method
 - 클래스를 사용하여 선언한 객체(object)이며, new 키워드와 생성자를 통해 초기화된 상태
 - 변수의 명명규칙과 동일한 방식으로 이름부여
 - 클래스에 선언된 method를 호출하거나 클래스 변수(속성)에 접근(읽고, 쓰기)할 때 연결하는 통로 역할 수행
+
+변수 scope
+-변수, 인스턴스, 메서드 등은 선언된 위치, 접근제한자 설정에 따라 외부에서 접근 하는 방식이 다르다.
+public static void main(String[] args){
+	int intNum = 0;
+}
+-main method에서 선언된 intNum 변수는 main method 블럭 (  {  }   )이 종료되면 소멸된다.
+for(int i = 0; i < 100; i++) {
+	int intSum = 0;
+	intSum += i;
+}
+-for() 명령문에 선언된 변수 i와 for() 명령 블럭(  {  }  )에 선언된 intSum은 for() 명령문 블럭(  {  }  )이 끝나면 사용할 수 없다.
+
