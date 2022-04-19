@@ -1,3 +1,66 @@
+Hyper Text : HT
+Hyper Text Markup Lang :  HTML
+Hyper Text Transfer Protocal : HTTP 
+Cascading Style Sheets : CSS
+Database Management System : DBMS
+javascript/jQuery
+
+Version Control System : VCS
+-소스코드의 변경 시점 관리
+-어떤 내용을 누가 어느시점에 변경했는지 관리
+-git, svn 등이 많이 사용됨
+
+Intergrated Development Environment : IDE
+-통합개발환경
+-소스코드의 변경 시점 관리
+-소스코드 작성, 컴파일, 테스트, 배포 등을 하나의 프로그램에서 처리할 수 있도록 만들어진 개발 도구
+
+컴파일(compile)
+-text type으로 작성된 소스코드를 컴퓨터에게 주입하기 위해 BIN(이진수)코드로 변환 하는것
+
+컴파일러(compiler)
+-소스코드를 컴파일하는 소프트웨어
+
+변수(Varriable)
+-연산을 수행할 데이터를 저장할 저장소(기억장소)
+-연산을 수행할 데이터를 기억장소에 저장할땨, 개발자가 직접 위치를 지정
+
+-자바(Java) 언어의 특징
+1. 완전한 객체지향 언어이다.
+2. 운영체제 독립적이다.
+3. 비교적 배우기 슆다
+4. 자동메모리 관리(Gabage collection)가 된다
+5. 네트워크와 분산 처리를 지원한다.
+6 .멀티스레드를 지원한다.
+7. 동적로딩(Dynamic Loading)을 지원한다.
+
+프로그래머, 개발자(Programer, Developer)
+-코드 작성, 분석 및 구현, 디버깅, 컴파일, 테스트 및 구현을 통해 원하는 출력물을 만들어 내는 일
+-시스템이 제대로 작동하기 위한 모든 다양한 요소를 다룰 수 있는 영역
+-다양한 유형의 복잡한 시나리오와 프로그램을 다룬다.
+-문제에 대한 솔루션을 개념화 하고 분석한 다음 문제 해결 방법을 결정
+-사소한 문제로 인해 발생할 수 있는 것들을 발견하고 예방한다.
+-코드분석, 패턴 디자인 등을 연구하고 습득 향상 시킨다.
+
+Method : 메서드, 메소드, 함수(function)
+-jdk에서 지원하지 않는 여러 명령문을 그룹으로 묶어 명령(어)처럼 사용한다.
+-method를 사용(실행)하려면 먼저 method가 정의 되어야 한다.
+public int num(){
+	return 100;
+}
+-method의 실행 결과를 다른 변수에 저장 할 수 있다.
+int result = num();
+
+JDK(Java Developement Kit)
+-java언어를 base로 하여 Application을 개발하는데 활용 할 수 있는 미리 준비된 class, method들의 모음
+-마치 모형 kit를 조립하는 것처럼, 아이디어를 현실화 할 수 있는 매우 다양한 기능들이 이미 준비되어 있음
+-JDK 도구만 잘 사용하여도 아이디어를 Application으로 구현 할수 있음
+-JDK 11 기준 14,500여개는 소스코드도 공개되어 있음
+
+객체지향 프로그래맹(OOP)
+-컴퓨터 프로그래밍 패러다임의 한가지로 프로그래밍에서 필요한 데이터를 추상화하고 상태와 행위를 가진 객체를 만들고
+그 객체들 간의 유기적인 상호 작용을 통해 문제를 해결하는 프로그래밍 방법이다.
+
 오류(Error)
 1. 코딩 문법오류로 인한 컴파일 시 오류와 런타임(실행)시 널 포인트 참조와 같은 오류로 심각한 문제를 야기 시켜 
 프로세스(애플리케이션)가 종료 되거나 중단된다.
@@ -83,4 +146,47 @@ for(int i = 0; i < 100; i++) {
 	intSum += i;
 }
 -for() 명령문에 선언된 변수 i와 for() 명령 블럭(  {  }  )에 선언된 intSum은 for() 명령문 블럭(  {  }  )이 끝나면 사용할 수 없다.
+
+클래스, 변수, 메서드 및 속성 이름 작명 코딩 패텅 : 이름작성 case 패턴
+1. 표준(lower)Camel case : myName
+2. Upper Camel case : ServiceV1, ScoreService, StudentService
+3. Kebab case : my-name, ham-button, top-menu
+4. 헝가리언 표기법 : intKor, strNation, bYes
+5. snack case(Underscore notation : my_name
+6. Upper Case fomat( 시스템, 전역변수 사용) : MY_PROJECT_USER_NAME
+
+생성자 method
+1. 클래스를 사용하여 객체(object) 선언 후 인스턴스화 할때 호출하는 method
+2. 생성자 method는 return type(void, int, String 등)이 없다
+3. 클래스 이름과 같다.(첫글자 대문자)
+4. 클래스를 선언하면 "기본 생성자"는 자동으로 선언된다.
+5. "임의 생성자"를 선언하면 기본 생성자를 선언해 주어야 한다.
+6. 생성자에서는 인스턴스변수(클래스 영역의 변수)를 초기화 하는 코드가 포함된다.
+public class ServiceV1{
+	private String[] students;
+	public ServiceV1(){
+		this(10);
+	}
+	public ServiceV1(int length){
+		student = new String[length];
+	}
+}
+
+자바(Java)의 역사
+1.
+2.
+3.
+4.
+5.
+6.
+
+Module이란
+1. 모듈화를 통해 분리된 시스템의 기능등로, 서브루틴, 서브시스템, 함수, methode 등을 말한다.
+Module의 결합도
+1. 모듈 간의 상호 의존하는 정도 또는 두 모듈 사이의 연관 관계
+Module의 응집도
+1. 정보 은닉 개념을 확장한 것으로, 명령이나 호출문 등 모듈의 내부 요소들의 서로 관련되어 있는 정도
+2. 모듈이 독립적인 기능으로 정의 되어 있는 정도를 의미
+잘 설계된 Module 은?
+1. 결합도는 낮고, 응집도는 높아야 한다.
 
