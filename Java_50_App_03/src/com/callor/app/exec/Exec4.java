@@ -18,16 +18,15 @@ public class Exec4 {
 			int i = 0;
 			for (i = 2; i < num; i++) {
 				if (num % i == 0) {
-					System.out.println(num + " 은 소수가 아닙니다.");
 					break;
 				}
 			}
-			if(i == num) {
+			if (i >= num) {
 				System.out.println(num + " 은 소수입니다.");
+			} else {
+				System.out.println(num + " 은 소수가 아닙니다.");
 			}
-			
+
 		}
-		
-		
 	}
 }
