@@ -21,10 +21,10 @@ public class Exec4 {
 					break;
 				}
 			}
-			if (i >= num) {
-				System.out.println(num + " 은 소수입니다.");
-			} else {
+			if (i < num) {
 				System.out.println(num + " 은 소수가 아닙니다.");
+			} else {
+				System.out.println(num + " 은 소수입니다.");
 			}
 
 		}
