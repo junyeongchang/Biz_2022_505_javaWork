@@ -1,7 +1,12 @@
-package com.callor.app.exec;
+package com.callor.app.primes;
 
 public class Exec7 {
 
+	/*
+	 * 100개의 배열을 만들고
+	 * 2~101까지 임의 정수를 각 요소에 저장
+	 * 각 요소에 저장된 값 중에 소수가 몇 개인지 찾아서 출력
+	 */
 	public static void main(String[] args) {
 
 		int[] intNums = new int[100];
