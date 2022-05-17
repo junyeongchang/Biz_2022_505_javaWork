@@ -34,4 +34,5 @@ public class InputServiceImplV2 extends InputServiceImplV1 {
 		}
 		return intNum;
 	}
+
 }
