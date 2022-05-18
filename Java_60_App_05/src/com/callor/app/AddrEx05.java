@@ -38,8 +38,8 @@ public class AddrEx05 {
 		for (int i = 0; i < size; i++) {
 			for (int j = i + 1; j < size; j++) {
 				if (addrList.get(i).getAge() > addrList.get(j).getAge()) {
-					AddressVO _t = new AddressVO();
-					_t = addrList.get(i);
+					// AddressVO _t = new AddressVO();
+					AddressVO _t = addrList.get(i);
 					addrList.set(i, addrList.get(j));
 					addrList.set(j, _t);
 				}
