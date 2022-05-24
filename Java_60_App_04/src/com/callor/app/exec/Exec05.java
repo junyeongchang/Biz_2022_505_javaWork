@@ -1,7 +1,5 @@
 package com.callor.app.exec;
 
-import java.util.Scanner;
-
 import com.callor.app.model.BookVO;
 
 public class Exec05 {

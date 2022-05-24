@@ -28,8 +28,7 @@ public class ScoreServiceImplV1 implements ScoreService {
 			int intKor = (int) (Math.random() * 51) + 50;
 			int intMath = (int) (Math.random() * 51) + 50;
 			int intEng = (int) (Math.random() * 51) + 50;
-			ScoreVO scVO = ScoreVO.builder().strNum((i + 1) + "").intKor(intKor).intEng(intEng).intMath(intMath)
-					.build();
+			ScoreVO scVO = ScoreVO.builder().strNum((i + 1) + "").intKor(intKor).intEng(intEng).intMath(intMath).build();
 			scoreList.add(scVO);
 		}
 	}
