@@ -411,3 +411,41 @@ UX(User Experience)
 의존관계 역전 원칙(DIP, Dependency Inversion Principle)
 1. 구체화가 아니라 추상화에 의존해야 한다.
 2. 구현 클래스(구현체)가 아니라 인터페이스(역할)에 의존하여 작성해야 한다.
+
+Stack(스택)
+1. Last in First Out
+2. 웹 브라우저 뒤로 가기
+3. 함수, 메서드 호출 및 종료
+4. 실행취소(Undo)
+5. 후위 표기법 계산
+6. 수식 괄호 계산
+
+Que(큐)
+1. First in First out
+2. 프린터의 인쇄 대기 열
+3. 은행업무
+4. 콜센터 개기 시간
+5. 프로세스 관리
+6. 너비 우선 탐색
+7. 캐시(cache) 구현
+
+데이터 영역(Data gegment) 또는 Static 영역
+1. 애플리케이션이 실행하면서 필요한 변수가 저장되는 영역
+2. 애플리케이션이 구동되는 동안 항상 접근 가능 한 영역
+3. 클래스 영역에 선언된 전역변수(public)와 정적변수(static)영역
+스택 영역(Stack segment)
+1. 메서드, 함수 내에 정의된 지역변수가 저장되는 영역
+2. 메서드가 호출될 때 할당되고 종료될 때 해체된다.
+힙(Heap segment)
+1. 동적 할당 영역
+2. java에서 클래스로 객체를 생성(new)하면 객체 인스턴스 저장되는영역
+3. 인스턴스, 배열 등 참조 변수들이 저장되는 영역
+4. 객체 배열을 생성하면 실제 데이터는 Heap에 저장되고 저장소의 주소는 스택에 저장된다.
+5. 컴파일러가 예측할 수 없으면 runtime에서 결정된다.
+
+1. java Source(*.java) 파일을
+2. java 컴파일러에서 읽고 실행되면 *.class이 생성됨
+3. Garbage Collector, Execution Engine, class Loader 중 class Loader에서 읽어서 Runtime Data Area영역으로 가게됨
+4. Runtime Data Area 영역에는 
+Method area, Heap area, Stack Area, PC Register, Native Method Stack 가 있다.
+5. Gabage Collector은 Runtime Data Area에서 끝난 애들을 정리해줌
